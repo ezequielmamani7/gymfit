@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenadores</title>
+    <!-- Bootstrap 5.3.5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header con Mega Menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-lightning-charge-fill text-warning"></i> GymFit
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="clases.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h6 class="dropdown-header">Cardio</h6>
+                                        <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6 class="dropdown-header">Fuerza</h6>
+                                        <li><a class="dropdown-item" href="clases.html#crossfit">CrossFit</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#bodybuilding">Culturismo</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#functional">Funcional</a></li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6 class="dropdown-header">Mente-Cuerpo</h6>
+                                        <li><a class="dropdown-item" href="clases.html#yoga">Yoga</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#meditation">Meditación</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="entrenadores.html">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <h1 class="display-4">Nuestros Entrenadores</h1>
+                    <p class="lead">Conoce a los profesionales que te guiarán en tu camino</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entrenadores con efecto flip -->
+    <section class="trainers py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Equipo de Profesionales</h2>
+                    <p class="section-subtitle">Entrenadores certificados con años de experiencia</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="trainer-card">
+                        <div class="trainer-card-inner">
+                            <div class="trainer-card-front">
+                                <img src="resources/avatar1.jpg" class="img-fluid" alt="Carlos Rodríguez">
+                                <div class="trainer-info">
+                                    <h4>Carlos Rodríguez</h4>
+                                    <p>Entrenador de CrossFit</p>
+                                </div>
+                            </div>
+                            <div class="trainer-card-back">
+                                <div class="trainer-details">
+                                    <h4>Carlos Rodríguez</h4>
+                                    <p class="trainer-bio">Especialista en CrossFit con más de 8 años de experiencia. Certificado en L3 CrossFit y nutrición deportiva.</p>
+                                    <div class="trainer-skills">
+                                        <h5>Especialidades:</h5>
+                                        <div class="skill-item">
+                                            <span>CrossFit</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Levantamiento Olímpico</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Nutrición Deportiva</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-rating text-center mt-3">
+                        <div class="rating-stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <p class="rating-count">4.5/5 (120 valoraciones)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="trainer-card">
+                        <div class="trainer-card-inner">
+                            <div class="trainer-card-front">
+                                <img src="resources/avatar2.jpg" class="img-fluid" alt="Laura Gómez">
+                                <div class="trainer-info">
+                                    <h4>Laura Gómez</h4>
+                                    <p>Instructora de Yoga</p>
+                                </div>
+                            </div>
+                            <div class="trainer-card-back">
+                                <div class="trainer-details">
+                                    <h4>Laura Gómez</h4>
+                                    <p class="trainer-bio">Instructora de yoga con 10 años de experiencia. Certificada en Hatha, Vinyasa y Yoga Restaurativo.</p>
+                                    <div class="trainer-skills">
+                                        <h5>Especialidades:</h5>
+                                        <div class="skill-item">
+                                            <span>Hatha Yoga</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Vinyasa Flow</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Meditación</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-rating text-center mt-3">
+                        <div class="rating-stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="rating-count">5.0/5 (98 valoraciones)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="trainer-card">
+                        <div class="trainer-card-inner">
+                            <div class="trainer-card-front">
+                                <img src="resources/avatar3.jpg" class="img-fluid" alt="Miguel Sánchez">
+                                <div class="trainer-info">
+                                    <h4>Miguel Sánchez</h4>
+                                    <p>Entrenador de HIIT</p>
+                                </div>
+                            </div>
+                            <div class="trainer-card-back">
+                                <div class="trainer-details">
+                                    <h4>Miguel Sánchez</h4>
+                                    <p class="trainer-bio">Especialista en entrenamiento de alta intensidad. Certificado en HIIT, TRX y entrenamiento funcional.</p>
+                                    <div class="trainer-skills">
+                                        <h5>Especialidades:</h5>
+                                        <div class="skill-item">
+                                            <span>HIIT</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>TRX</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Entrenamiento Funcional</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-rating text-center mt-3">
+                        <div class="rating-stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                        </div>
+                        <p class="rating-count">4.2/5 (85 valoraciones)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="trainer-card">
+                        <div class="trainer-card-inner">
+                            <div class="trainer-card-front">
+                                <img src="resources/avatar4.jpg" class="img-fluid" alt="Ana Martínez">
+                                <div class="trainer-info">
+                                    <h4>Ana Martínez</h4>
+                                    <p>Instructora de Zumba</p>
+                                </div>
+                            </div>
+                            <div class="trainer-card-back">
+                                <div class="trainer-details">
+                                    <h4>Ana Martínez</h4>
+                                    <p class="trainer-bio">Bailarina profesional e instructora de Zumba con 7 años de experiencia. Especialista en ritmos latinos y fitness dance.</p>
+                                    <div class="trainer-skills">
+                                        <h5>Especialidades:</h5>
+                                        <div class="skill-item">
+                                            <span>Zumba</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Baile Latino</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Aeróbicos</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                                        <a href="#"><i class="bi bi-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-rating text-center mt-3">
+                        <div class="rating-stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <p class="rating-count">4.7/5 (110 valoraciones)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="trainer-card">
+                        <div class="trainer-card-inner">
+                            <div class="trainer-card-front">
+                                <img src="resources/avatar5.jpg" class="img-fluid" alt="Javier López">
+                                <div class="trainer-info">
+                                    <h4>Javier López</h4>
+                                    <p>Entrenador de Culturismo</p>
+                                </div>
+                            </div>
+                            <div class="trainer-card-back">
+                                <div class="trainer-details">
+                                    <h4>Javier López</h4>
+                                    <p class="trainer-bio">Campeón nacional de culturismo y entrenador personal con 12 años de experiencia. Especialista en hipertrofia y definición muscular.</p>
+                                    <div class="trainer-skills">
+                                        <h5>Especialidades:</h5>
+                                        <div class="skill-item">
+                                            <span>Culturismo</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Nutrición Deportiva</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Entrenamiento de Fuerza</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-rating text-center mt-3">
+                        <div class="rating-stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="rating-count">4.9/5 (130 valoraciones)</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="trainer-card">
+                        <div class="trainer-card-inner">
+                            <div class="trainer-card-front">
+                                <img src="resources/avatar6.jpg" class="img-fluid" alt="Sofía Ramírez">
+                                <div class="trainer-info">
+                                    <h4>Sofía Ramírez</h4>
+                                    <p>Instructora de Pilates</p>
+                                </div>
+                            </div>
+                            <div class="trainer-card-back">
+                                <div class="trainer-details">
+                                    <h4>Sofía Ramírez</h4>
+                                    <p class="trainer-bio">Fisioterapeuta e instructora de Pilates con 9 años de experiencia. Especialista en rehabilitación y corrección postural.</p>
+                                    <div class="trainer-skills">
+                                        <h5>Especialidades:</h5>
+                                        <div class="skill-item">
+                                            <span>Pilates Mat</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Pilates Reformer</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span>Rehabilitación</span>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trainer-social">
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-rating text-center mt-3">
+                        <div class="rating-stars">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <p class="rating-count">4.6/5 (95 valoraciones)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Rating con estrellas -->
+    <section class="rating-system py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Califica a nuestros entrenadores</h2>
+                    <p class="section-subtitle">Tu opinión nos ayuda a mejorar</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <form id="ratingForm" class="needs-validation" novalidate>
+                        <div class="mb-4">
+                            <label for="trainerSelect" class="form-label">Selecciona un entrenador</label>
+                            <select class="form-select" id="trainerSelect" required>
+                                <option value="" selected disabled>Elige un entrenador</option>
+                                <option value="Carlos Rodríguez">Carlos Rodríguez - CrossFit</option>
+                                <option value="Laura Gómez">Laura Gómez - Yoga</option>
+                                <option value="Miguel Sánchez">Miguel Sánchez - HIIT</option>
+                                <option value="Ana Martínez">Ana Martínez - Zumba</option>
+                                <option value="Javier López">Javier López - Culturismo</option>
+                                <option value="Sofía Ramírez">Sofía Ramírez - Pilates</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor, selecciona un entrenador.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Tu valoración</label>
+                            <div class="rating-input">
+                                <div class="rating-group">
+                                    <input type="radio" class="rating-input" id="rating-5" name="rating" value="5" required>
+                                    <label for="rating-5" class="rating-label"><i class="bi bi-star-fill"></i></label>
+                                    <input type="radio" class="rating-input" id="rating-4" name="rating" value="4">
+                                    <label for="rating-4" class="rating-label"><i class="bi bi-star-fill"></i></label>
+                                    <input type="radio" class="rating-input" id="rating-3" name="rating" value="3">
+                                    <label for="rating-3" class="rating-label"><i class="bi bi-star-fill"></i></label>
+                                    <input type="radio" class="rating-input" id="rating-2" name="rating" value="2">
+                                    <label for="rating-2" class="rating-label"><i class="bi bi-star-fill"></i></label>
+                                    <input type="radio" class="rating-input" id="rating-1" name="rating" value="1">
+                                    <label for="rating-1" class="rating-label"><i class="bi bi-star-fill"></i></label>
+                                </div>
+                                <div class="rating-value ms-3">0/5</div>
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, selecciona una valoración.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="commentTextarea" class="form-label">Comentario (opcional)</label>
+                            <textarea class="form-control" id="commentTextarea" rows="3" placeholder="Comparte tu experiencia con este entrenador..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-warning">Enviar valoración</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">GymFit</h5>
+                    <p>Tu gimnasio de confianza con las mejores instalaciones y profesionales para ayudarte a alcanzar tus objetivos.</p>
+                    <h6 class="mb-3">Síguenos en nuestras redes sociales</h6>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white me-3">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-white me-3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="clases.html" class="text-white">Clases</a></li>
+                        <li class="mb-2"><a href="entrenadores.html" class="text-white">Entrenadores</a></li>
+                        <li class="mb-2"><a href="precios.html" class="text-white">Precios</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Av. Libertador 1234, San Salvador de Jujuy, Argentina
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            +54 388 123 4567
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@gymfit.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-uppercase mb-4">Suscríbete</h5>
+                    <p>Recibe nuestras últimas noticias y ofertas especiales.</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                            <button class="btn btn-warning" type="submit">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="map-container" style="height: 300px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58231.970847560966!2d-65.35927466874998!3d-24.18932599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses!2sar!4v1743904550596!5m2!1ses!2sar"
+                            width="100%"
+                            height="100%"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            title="Ubicación del gimnasio"
+                            aria-label="Mapa con la ubicación del gimnasio">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-3 border-top">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <span id="current-year"></span> GymFit. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Términos y condiciones</a>
+                    <a href="#" class="text-white">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+    <!-- Bootstrap 5.3.5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+     <!-- Header con Mega Menú -->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-lightning-charge-fill text-warning"></i> GymFit
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="clases.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h6 class="dropdown-header">Cardio</h6>
+                                        <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6 class="dropdown-header">Fuerza</h6>
+                                        <li><a class="dropdown-item" href="clases.html#crossfit">CrossFit</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#bodybuilding">Culturismo</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#functional">Funcional</a></li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6 class="dropdown-header">Mente-Cuerpo</h6>
+                                        <li><a class="dropdown-item" href="clases.html#yoga">Yoga</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                        <li><a class="dropdown-item" href="clases.html#meditation">Meditación</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entrenadores.html">Entrenadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <h1 class="display-4">Nuestros Precios</h1>
+                    <p class="lead">Planes flexibles para todas tus necesidades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle mensual/anual -->
+    <section class="pricing-toggle py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Planes de Membresía</h2>
+                    <p class="section-subtitle">Elige el plan que mejor se adapte a tus objetivos</p>
+                    <div class="pricing-switch mt-4">
+                        <span class="me-3 pricing-period active" id="monthlyLabel">Mensual</span>
+                        <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="pricingToggle">
+                            <label class="form-check-label" for="pricingToggle"></label>
+                        </div>
+                        <span class="ms-3 pricing-period" id="annualLabel">Anual <span class="badge bg-danger">20% OFF</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla con hover -->
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-header text-center py-4 bg-light">
+                            <h3 class="mb-0">Básico</h3>
+                            <p class="text-muted mb-0">Para principiantes</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="card-price">
+                                <span class="price monthly-price">$25,000</span>
+                                <span class="price annual-price d-none">$240,000</span>
+                                <span class="period">/mes</span>
+                            </h2>
+                            <ul class="list-group list-group-flush pricing-list">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Acceso a sala de musculación
+                                    <i class="bi bi-info-circle text-muted ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Acceso ilimitado a todas las máquinas y pesas"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> 5 clases al mes
+                                    <i class="bi bi-info-circle text-muted ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Puedes elegir entre cualquiera de nuestras clases grupales"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-x-circle-fill text-danger me-2"></i> Evaluación física
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-x-circle-fill text-danger me-2"></i> Plan de entrenamiento personalizado
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-x-circle-fill text-danger me-2"></i> Acceso a sauna y spa
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center py-4 bg-light">
+                            <a href="contact.html" class="btn btn-outline-warning btn-lg">Elegir Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card h-100 popular-plan">
+                        <div class="card-header text-center py-4 bg-warning text-dark">
+                            <span class="badge bg-danger position-absolute top-0 start-50 translate-middle">Más Popular</span>
+                            <h3 class="mb-0">Premium</h3>
+                            <p class="mb-0">Para entusiastas del fitness</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="card-price">
+                                <span class="price monthly-price">$35,000</span>
+                                <span class="price annual-price d-none">$336,000</span>
+                                <span class="period">/mes</span>
+                            </h2>
+                            <ul class="list-group list-group-flush pricing-list">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Acceso a sala de musculación
+                                    <i class="bi bi-info-circle text-muted ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Acceso ilimitado a todas las máquinas y pesas"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Clases ilimitadas
+                                    <i class="bi bi-info-circle text-muted ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Acceso a todas nuestras clases grupales sin límite"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Evaluación física trimestral
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Plan de entrenamiento personalizado
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-x-circle-fill text-danger me-2"></i> Acceso a sauna y spa
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center py-4 bg-light">
+                            <a href="contact.html" class="btn btn-warning btn-lg">Elegir Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-header text-center py-4 bg-light">
+                            <h3 class="mb-0">Elite</h3>
+                            <p class="text-muted mb-0">Para profesionales</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="card-price">
+                                <span class="price monthly-price">$50,000</span>
+                                <span class="price annual-price d-none">$480,000</span>
+                                <span class="period">/mes</span>
+                            </h2>
+                            <ul class="list-group list-group-flush pricing-list">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Acceso a sala de musculación
+                                    <i class="bi bi-info-circle text-muted ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Acceso ilimitado a todas las máquinas y pesas"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Clases ilimitadas
+                                    <i class="bi bi-info-circle text-muted ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Acceso a todas nuestras clases grupales sin límite"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Evaluación física mensual
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Plan de entrenamiento personalizado
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i> Acceso a sauna y spa
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center py-4 bg-light">
+                            <a href="contact.html" class="btn btn-outline-warning btn-lg">Elegir Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">GymFit</h5>
+                    <p>Tu gimnasio de confianza con las mejores instalaciones y profesionales para ayudarte a alcanzar tus objetivos.</p>
+                    <h6 class="mb-3">Síguenos en nuestras redes sociales</h6>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white me-3">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-white me-3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="clases.html" class="text-white">Clases</a></li>
+                        <li class="mb-2"><a href="entrenadores.html" class="text-white">Entrenadores</a></li>
+                        <li class="mb-2"><a href="precios.html" class="text-white">Precios</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Av. Libertador 1234, San Salvador de Jujuy, Argentina
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            +54 388 123 4567
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@gymfit.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-uppercase mb-4">Suscríbete</h5>
+                    <p>Recibe nuestras últimas noticias y ofertas especiales.</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                            <button class="btn btn-warning" type="submit">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="map-container" style="height: 300px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58231.970847560966!2d-65.35927466874998!3d-24.18932599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses!2sar!4v1743904550596!5m2!1ses!2sar"
+                            width="100%"
+                            height="100%"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            title="Ubicación del gimnasio"
+                            aria-label="Mapa con la ubicación del gimnasio">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-3 border-top">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <span id="current-year"></span> GymFit. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Términos y condiciones</a>
+                    <a href="#" class="text-white">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
